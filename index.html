@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css"/>
+<title>Home</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar large">
+                <input type="checkbox" id="check"/>
+        <label for="check" class="checkbtn">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="App-header-menu-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path></g></svg>
+        </label>
+        <div class="navbar-container-left"><a class="navbar-link-main" href="#/"><img src="./images/logo.png" class="big" alt="Romi Logo"></a></div>
+        <div class="navbar-container-left">
+           <div class="navbar-links">
+              <div class="navbar-link-container"><a href="./index.html" class="">Home</a></div>
+              <div class="navbar-link-container"><a class="" href="./dashboard.html">Dashboard</a></div>
+              <div class="header-dropdown">
+                 <div class="dropbtn"><a href="#/nft" aria-current="page">NFT</a></div>
+                 <div class="header-dropdown-content">
+                    <a href="#/nft">
+                          <p>Mint</p>
+                    </a>
+                    <a href="#/nft-stake">
+                          <p>Stake NFT</p>
+                    </a>
+                 </div>
+              </div>
+              <div class="navbar-link-container"><a class="" href="./earn.html">Earn</a></div>
+              <div class="navbar-link-container"><a class="" href="#/buy">Buy</a></div>
+              <div class="navbar-link-container"><a class="" href="#/referrals">Referrals</a></div>
+              <div class="navbar-link-container"><a class="" href="#/ecosystem">Ecosystem</a></div>
+              <div class="navbar-link-container"><a href="https://docs.Romi.finance" target="_blank" rel="noopener noreferrer">About</a></div>
+           </div>
+        </div>
+        <div class="navbar-container-right">
+           <div class="navbar-user">
+              <div class="navbar-trade-link"><a class="default-btn" href="#/trade">Trade</a></div>
+              <button class="btn btn-primary btn-sm connect-wallet"><img class="btn-image" src="https://www.zomi.finance/static/media/ic_wallet_24.a19a6758.svg" alt="Connect Wallet"><span class="btn-label">Connect Wallet</span></button>
+              <button class="btn btn-primary btn-sm connect-wallet"><img class="btn-image" src="https://www.zomi.finance/static/media/ic_eth_24.6b1d8a1d.svg" alt="Connect Wallet"><span class="btn-label"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" color="white" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: white;"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></span></button>
+           </div>
+        </div>
+     </div>
+
+     <!-- Home-banner -->
+     <div class="home-top">
+        <div class="title">
+            <p class="title-head">Decentralized <br/>Perpetual Exchange</p>
+            <p class="title-para">Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 30x leverage directly from your wallet</p>
+            <button class="btn btn-primary btn-sm default-btn">Launch Exchange</button>
+        </div>
+        <div class="titlelatest">
+            <div class="latest-contain">
+                <div class="img"><img src="https://www.zomi.finance/static/media/ic_trading.2c53815a.svg"/></div>
+                <div class="lc-text">
+                    <p>Total Trading Volume</p>
+                    <h3>$0</h3>
+                </div>
+            </div>
+            <div class="latest-contain">
+                <div class="img"><img src="https://www.zomi.finance/static/media/ic_stats.f0a18011.svg"/></div>
+                <div class="lc-text">
+                    <p>Total Trading Volume</p>
+                    <h3>$0</h3>
+                </div>
+            </div>
+            <div class="latest-contain">
+                <div class="lc-img"><img src="https://www.zomi.finance/static/media/ic_totaluser.ae09b310.svg"/></div>
+                <div class="lc-text">
+                    <p>Total Trading Volume</p>
+                    <h3>0</h3>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="item-list">
+        <div class="il-contain">
+            <div class="il-img">
+                <img src="https://www.zomi.finance/static/media/ic_liquidity.505b3f30.svg"/>
+                <h3 style="font-size: 22px;margin-left: 15px;">Reduce Liquidation Risks</h3>
+            </div>
+            <p>An aggregate of high-quality price feeds determine when liquidations occur. This keeps positions safe from temporary wicks.</p>
+        </div>
+        <div class="il-contain">
+            <div class="il-img">
+                <img src="https://www.zomi.finance/static/media/ic_cost.b4a729d3.svg"/>
+                <h3 style="font-size: 22px;margin-left: 15px;">Save on Costs</h3>
+            </div>
+            <p>Enter and exit positions with minimal spread and zero price impact. Get the optimal price without incurring additional costs.</p>
+        </div>
+        <div class="il-contain">
+            <div class="il-img">
+                <img src="https://www.zomi.finance/static/media/ic_simpleswaps.2005009f.svg"/>
+                <h3 style="font-size: 22px;margin-left: 15px;">Simple Swaps</h3>
+            </div>
+            <p>Open positions through a simple swap interface. Conveniently swap from any supported asset into the position of your choice.</p>
+        </div>
+     </div>
+     <div class="two-token">
+         <h3>Two tokens create<br/>our ecosystem</h3>
+         <div class="two-token-item">
+            <div class="token-card">
+                <div class="sub-token-1">
+                    <img src="./images/token1.png"/>
+                    <h4>$ROMI</h4>
+                </div>
+                <p>$ROMI is the utility and governance token. Accrues 30% of the platform's generated fees.</p>
+                <p>Ethereum APR: 0.00%</p>
+                <div style="display: flex;">
+                    <button class="btn btn-primary btn-sm default-btn mx-2">Buy</button>
+                    <button class="btn btn-primary btn-sm connect-wallet">Read More</button>
+                </div>
+            </div>
+            <div class="token-card">
+                <div class="sub-token-1">
+                    <img src="./images/token2.png"/>
+                    <h4>$RLP</h4>
+                </div>
+                <p>$RLP is the utility and governance token. Accrues 30% of the platform's generated fees.</p>
+                <p>Ethereum APR: 0.00%</p>
+                <div style="display: flex;">
+                    <button class="btn btn-primary btn-sm default-btn mx-2">Buy</button>
+                    <button class="btn btn-primary btn-sm connect-wallet">Read More</button>
+                </div>
+            </div>
+         </div>
+     </div>
+
+     <!-- footer -->
+     <div class="footer">
+        <img src="./images/logo.png"/>
+        <div class="social">
+            <a href="#"><img src="https://www.zomi.finance/static/media/ic_twitter.9f35b403.svg"/></a>
+            <a href="#"><img src="https://www.zomi.finance/static/media/ic_medium.f6051b2e.svg"/></a>
+            <a href="#"><img src="https://www.zomi.finance/static/media/ic_github.dbd4de8a.svg"/></a>
+            <a href="#"><img src="https://www.zomi.finance/static/media/ic_telegram.af1a4a66.svg"/></a>
+            <a href="#"><img src="https://www.zomi.finance/static/media/ic_discord.be4d716c.svg"/></a>
+        </div>
+        <ul>
+            <l1><a href="#">Terms and Conditions</a></l1>
+            <l1><a href="#">Referral Terms</a></l1>
+            <l1><a href="#">Med Kit</a></l1>
+        </ul>
+     </div>
+     <script src="./script.js"></script>
+</body>
+</html>

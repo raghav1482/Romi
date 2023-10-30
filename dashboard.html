@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css"/>
+<link rel="stylesheet" href="./dashboard.css"/>
+
+<title>Dashboard</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar large">
+        <input type="checkbox" id="check"/>
+<label for="check" class="checkbtn">
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="App-header-menu-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path></g></svg>
+</label>
+<div class="navbar-container-left"><a class="navbar-link-main" href="#/"><img src="./images/logo.png" class="big" alt="Romi Logo"></a></div>
+<div class="navbar-container-left">
+   <div class="navbar-links">
+      <div class="navbar-link-container"><a href="./index.html" class="">Home</a></div>
+      <div class="navbar-link-container"><a class="" href="./dashboard.html">Dashboard</a></div>
+      <div class="header-dropdown">
+         <div class="dropbtn"><a href="#/nft" aria-current="page">NFT</a></div>
+         <div class="header-dropdown-content">
+            <a href="#/nft">
+                  <p>Mint</p>
+            </a>
+            <a href="#/nft-stake">
+                  <p>Stake NFT</p>
+            </a>
+         </div>
+      </div>
+      <div class="navbar-link-container"><a class="" href="./earn.html">Earn</a></div>
+      <div class="navbar-link-container"><a class="" href="#/buy">Buy</a></div>
+      <div class="navbar-link-container"><a class="" href="#/referrals">Referrals</a></div>
+      <div class="navbar-link-container"><a class="" href="#/ecosystem">Ecosystem</a></div>
+      <div class="navbar-link-container"><a href="https://docs.Romi.finance" target="_blank" rel="noopener noreferrer">About</a></div>
+   </div>
+</div>
+<div class="navbar-container-right">
+   <div class="navbar-user">
+      <div class="navbar-trade-link"><a class="default-btn" href="#/trade">Trade</a></div>
+      <button class="btn btn-primary btn-sm connect-wallet"><img class="btn-image" src="https://www.zomi.finance/static/media/ic_wallet_24.a19a6758.svg" alt="Connect Wallet"><span class="btn-label">Connect Wallet</span></button>
+      <button class="btn btn-primary btn-sm connect-wallet"><img class="btn-image" src="https://www.zomi.finance/static/media/ic_eth_24.6b1d8a1d.svg" alt="Connect Wallet"><span class="btn-label"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" color="white" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: white;"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></span></button>
+   </div>
+</div>
+</div>
+
+
+     <!-- STATS -->
+     <div class="two-token stats">
+        <h3>Stats<img src="https://www.zomi.finance/static/media/ic_avalanche_24.4f4088f4.svg"/></h3>
+        <p>Ethereum Total Stats start from 06 Jan 2022.<br/>For detailed stats:</p>
+        <div class="two-token-item">
+           <div class="token-card">
+               <div class="sub-token-1">
+                   <p class="p-head">Overview</p>
+               </div>
+               <div class="stat-data"><p>AUM</p><p class="p-head">$34</p></div>
+               <div class="stat-data"><p>$ZLP Pool</p><p class="p-head">$34</p></div>
+               <div class="stat-data"><p>24h Volume</p><p class="p-head">$0</p></div>
+               <div class="stat-data"><p>Long Positions</p><p class="p-head">$0</p></div>
+               <div class="stat-data"><p>Short Positions</p><p class="p-head">$0</p></div>
+           </div>
+           <div class="token-card">
+               <div class="sub-token-1">
+                   <p class="p-head">Total Stats</p>
+               </div>
+               <div class="stat-data"><p>Total Fees</p><p class="p-head">$0</p></div>
+               <div class="stat-data"><p>Total Volume</p><p class="p-head">$0</p></div>
+               <div class="stat-data"><p>Floor Price Fund</p><p class="p-head">$628,046</p></div>
+           </div>
+           
+        </div>
+    </div>
+    
+    <!-- TOKEN -->
+     <div class="two-token stats">
+        <h3>Tokens<img src="https://www.zomi.finance/static/media/ic_avalanche_24.4f4088f4.svg"/></h3>
+        <p>Platform and $ZLP index tokens.</p>
+        <div class="two-token-item">
+           <div class="token-card">
+                <div class="sub-token-1">
+                    <img src="./images/token1.png"/>
+                    <h4>$ROMI</h4>
+                </div>
+               <div class="stat-data"><p>Price</p><p class="p-head">$0.00</p></div>
+               <div class="stat-data"><p>Supply</p><p class="p-head">10,000 $ZOMI</p></div>
+               <div class="stat-data"><p>Total Staked</p><p class="p-head">$0</p></div>
+               <div class="stat-data"><p>Market Cap</p><p class="p-head">$10</p></div>
+           </div>
+           <div class="token-card">
+                <div class="sub-token-1">
+                    <img src="./images/token2.png"/>
+                    <h4>$ZLP</h4>
+                </div>
+                <div class="stat-data"><p>Price</p><p class="p-head">$0.00</p></div>
+                <div class="stat-data"><p>Supply</p><p class="p-head">10,000 $ZOMI</p></div>
+                <div class="stat-data"><p>Total Staked</p><p class="p-head">$0</p></div>
+                <div class="stat-data"><p>Market Cap</p><p class="p-head">$10</p></div>
+           </div>
+           
+        </div>
+    </div>
+
+
+    <div class="table">
+        <table>
+            <p class="head">$ZLP Index Composition<img src="https://www.zomi.finance/static/media/ic_avalanche_16.d53ce0b2.svg" style="margin-left: 10px;"></p>
+            <tr>
+            <th>TOKEN</th>
+            <th>PRICE</th>
+            <th>POOL</th>
+            <th>WEIGHT</th>
+            <th>UTILIZATION</th>
+            </tr>
+            <tr>
+            <td><img src="https://www.zomi.finance/static/media/ic_eth_40.5e255508.svg" style="margin-right: 20px;"/>Ethereum</td>
+            <td>$1,796.82</td>
+            <td>$19</td>
+            <td>50.49% / 25.00%</td>
+            <td>0.00%</td>
+            </tr>
+            <tr>
+            <td><img src="https://www.zomi.finance/static/media/ic_wbtc_40.8330ef8d.svg" style="margin-right: 20px;"/>Wrapped Bitcoin</td>
+            <td>$1,796.82</td>
+            <td>$0</td>
+            <td>	0.00% / 25.00%</td>
+            <td>0.00%</td>
+            </tr>
+            <tr>
+            <td><img src="https://www.zomi.finance/static/media/ic_ape_40.53ac41f3.svg" style="margin-right: 20px;"/>ApeCoin</td>
+            <td>$1,796.82</td>
+            <td>$0</td>
+            <td>	0.00% / 25.00%</td>
+            <td>0.00%</td>
+            </tr>
+            <tr>
+            <td><img src="https://www.zomi.finance/static/media/ic_usdc_40.27f415ba.svg" style="margin-right: 20px;"/>USD Coin</td>
+            <td>$1,796.82</td>
+            <td>$14</td>
+            <td>	49.50% / 25.00%</td>
+            <td>0.00%</td>
+            </tr>
+        </table>
+    </div>
+
+         <!-- footer -->
+         <div class="footer" style="margin-top: 60px;">
+            <img src="./images/logo.png"/>
+            <div class="social">
+                <a href="#"><img src="https://www.zomi.finance/static/media/ic_twitter.9f35b403.svg"/></a>
+                <a href="#"><img src="https://www.zomi.finance/static/media/ic_medium.f6051b2e.svg"/></a>
+                <a href="#"><img src="https://www.zomi.finance/static/media/ic_github.dbd4de8a.svg"/></a>
+                <a href="#"><img src="https://www.zomi.finance/static/media/ic_telegram.af1a4a66.svg"/></a>
+                <a href="#"><img src="https://www.zomi.finance/static/media/ic_discord.be4d716c.svg"/></a>
+            </div>
+            <ul>
+                <l1><a href="#">Terms and Conditions</a></l1>
+                <l1><a href="#">Referral Terms</a></l1>
+                <l1><a href="#">Med Kit</a></l1>
+            </ul>
+         </div>
+         <script src="./script.js"></script>
+</body>
+</html>
